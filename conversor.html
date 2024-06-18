@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href='img/conversor.png'>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="conversor.html">Conversor</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="explanation">
+            <h2>¿Cómo funciona?</h2>
+            <p>Este conversor transforma texto en números según una asignación predefinida (La que me he inventado mientras le daba ordenes a la IA) y viceversa. Introduce tu texto o números en los campos correspondientes y pulsa el botón "Convertir".</p>
+        </div>
+        <div class="converter">
+            <h2>Texto a Números</h2>
+            <textarea id="text-input" placeholder="Introduce el texto..."></textarea>
+            <button onclick="convertTextToNumbers()">Convertir</button>
+            <textarea id="number-output" placeholder="Resultado en números..." readonly></textarea>
+        </div>
+        <div class="converter">
+            <h2>Números a Texto</h2>
+            <textarea id="number-input" placeholder="Introduce los números separados por espacios..."></textarea>
+            <button onclick="convertNumbersToText()">Convertir</button>
+            <textarea id="text-output" placeholder="Resultado en texto..." readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
